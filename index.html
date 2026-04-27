@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#f5a623">
+    <meta name="description" content="Frys & Guys - Premium fried chicken, burgers, broast & more. Warm hug for your taste buds! Order now on WhatsApp.">
+    <meta property="og:title" content="Frys & Guys - Digital Menu">
+    <meta property="og:description" content="Premium fried chicken, burgers, broast & more. Warm hug for your taste buds!">
+    <meta property="og:type" content="website">
+    <title>Frys & Guys | Digital Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg-emojis">
+                <span class="bg-emoji emoji-1">🍔</span>
+                <span class="bg-emoji emoji-2">🍗</span>
+                <span class="bg-emoji emoji-3">🍟</span>
+                <span class="bg-emoji emoji-4">🥤</span>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Frys <span class="ampersand">&</span> Guys</h1>
+                <p class="hero-tagline">"Warm hug for your taste buds"</p>
+                <div class="hero-emojis">
+                    <span class="bounce-emoji" style="animation-delay: 0ms;">🍔</span>
+                    <span class="bounce-emoji" style="animation-delay: 100ms;">🍗</span>
+                    <span class="bounce-emoji" style="animation-delay: 200ms;">🍟</span>
+                    <span class="bounce-emoji" style="animation-delay: 300ms;">🥤</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sticky Category Navigation -->
+        <nav class="category-nav" id="categoryNav">
+            <div class="category-scroll">
+                <button class="category-btn active" data-category="burgers">
+                    <span class="category-emoji">🍔</span>
+                    <span>Burgers</span>
+                </button>
+                <button class="category-btn" data-category="broast">
+                    <span class="category-emoji">🍗</span>
+                    <span>Broast</span>
+                </button>
+                <button class="category-btn" data-category="wings-wraps">
+                    <span class="category-emoji">🍗</span>
+                    <span>Wings & Wraps</span>
+                </button>
+                <button class="category-btn" data-category="fries-sides">
+                    <span class="category-emoji">🍟</span>
+                    <span>Fries & Sides</span>
+                </button>
+                <button class="category-btn" data-category="drinks">
+                    <span class="category-emoji">🥤</span>
+                    <span>Drinks</span>
+                </button>
+                <button class="category-btn" data-category="deals">
+                    <span class="category-emoji">🎉</span>
+                    <span>Deals</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Menu Sections -->
+        <div class="menu-container">
+            <!-- Burgers Section -->
+            <section class="menu-section" id="burgers">
+                <div class="section-header">
+                    <span class="section-emoji">🍔</span>
+                    <h2 class="section-title">Burgers</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card" data-aos="fade-up">
+                        <div class="card-image">
+                            <img src="assets/images/zinger-burger.jpg" alt="Zinger Burger" loading="lazy">
+                            <span class="price-badge">Rs. 450</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Zinger Burger</h3>
+                            <p class="item-description">Crispy fried chicken fillet with fresh lettuce, creamy mayo, and signature sauce in a soft sesame bun.</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Zinger Burger', 450)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-image">
+                            <img src="assets/images/crispy-max.jpg" alt="Crispy Max" loading="lazy">
+                            <span class="price-badge">Rs. 540</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Crispy Max</h3>
+                            <p class="item-description">Double the crunch! Our signature crispy fillet with special sauce, jalapeños, and our pillowy soft bun.</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Crispy Max', 540)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-image">
+                            <img src="assets/images/zomato-burger.jpg" alt="Zomato Burger" loading="lazy">
+                            <span class="price-badge">Rs. 540</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Zomato Burger</h3>
+                            <p class="item-description">Fan favorite! Crispy chicken with melted cheese, crisp lettuce, and fiery jalapeños in a toasted bun.</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Zomato Burger', 540)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-image">
+                            <img src="assets/images/crispy-xl.jpg" alt="Crispy XL" loading="lazy">
+                            <span class="price-badge">Rs. 780</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Crispy XL</h3>
+                            <p class="item-description">Our biggest burger! Double fillet with cheese, lettuce, and our secret sauce. For the truly hungry.</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Crispy XL', 780)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Broast Section -->
+            <section class="menu-section" id="broast">
+                <div class="section-header">
+                    <span class="section-emoji">🍗</span>
+                    <h2 class="section-title">Broast</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card" data-aos="fade-up">
+                        <div class="card-image">
+                            <img src="assets/images/broast.jpg" alt="Quarter Broast" loading="lazy">
+                            <span class="price-badge">Rs. 690</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Quarter Broast</h3>
+                            <p class="item-description">1 leg piece, 1 thigh piece, 1 bun, 1 dip sauce, and crispy fries. Perfect for a quick bite.</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Quarter Broast', 690)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-image">
+                            <img src="assets/images/broast.jpg" alt="Half Broast" loading="lazy">
+                            <span class="price-badge">Rs. 1250</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Half Broast</h3>
+                            <p class="item-description">2 leg pieces, 2 thigh pieces, 1 bun, 1 dip sauce, and loaded fries. Great for sharing!</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Half Broast', 1250)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-image">
+                            <img src="assets/images/broast.jpg" alt="Full Broast" loading="lazy">
+                            <span class="price-badge">Rs. 2390</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Full Broast</h3>
+                            <p class="item-description">4 leg pieces, 4 thigh pieces, 2 buns, 2 dip sauces, and extra fries. Feed the whole crew!</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Full Broast', 2390)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Wings & Wraps Section -->
+            <section class="menu-section" id="wings-wraps">
+                <div class="section-header">
+                    <span class="section-emoji">🍗</span>
+                    <h2 class="section-title">Wings & Wraps</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card" data-aos="fade-up">
+                        <div class="card-image">
+                            <img src="assets/images/wings.jpg" alt="Sweet Thai Chilli Wings" loading="lazy">
+                            <span class="price-badge">Rs. 450</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Sweet Thai Chilli Wings</h3>
+                            <p class="item-description">Crispy wings generously coated in our irresistible Sweet Thai Chilli sauce. Sweet and spicy perfection!</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Sweet Thai Chilli Wings', 450)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-image">
+                            <img src="assets/images/buffalo-wings.jpg" alt="Buffalo Hot Wings" loading="lazy">
+                            <span class="price-badge">Rs. 430</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Buffalo Hot Wings</h3>
+                            <p class="item-description">Crispy tender wings drenched in our signature buffalo sauce. Each bite delivers a mouthwatering burst of spicy goodness!</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Buffalo Hot Wings', 430)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-image">
+                            <img src="assets/images/wrap.jpg" alt="Chicken Wrap" loading="lazy">
+                            <span class="price-badge">Rs. 560</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Chicken Wrap</h3>
+                            <p class="item-description">Soft tortilla filled with crispy chicken strips, fresh lettuce, and our iconic signature sauce. Every bite is a burst of flavor!</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Chicken Wrap', 560)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fries & Sides Section -->
+            <section class="menu-section" id="fries-sides">
+                <div class="section-header">
+                    <span class="section-emoji">🍟</span>
+                    <h2 class="section-title">Fries & Sides</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card" data-aos="fade-up">
+                        <div class="card-image">
+                            <img src="assets/images/tender-strips.jpg" alt="Tender Strips" loading="lazy">
+                            <span class="price-badge">Rs. 590</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Tender Strips</h3>
+                            <p class="item-description">Crispy on the outside, juicy on the inside! Our perfectly seasoned golden-fried chicken strips served hot.</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Tender Strips', 590)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-image">
+                            <img src="assets/images/loaded-fries.jpg" alt="Loaded Fries" loading="lazy">
+                            <span class="price-badge">Rs. 590</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Loaded Fries</h3>
+                            <p class="item-description">Crispy golden fries drenched in our special signature sauce, topped with juicy chicken, fiery jalapeños, and zesty olives.</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Loaded Fries', 590)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-image">
+                            <img src="assets/images/nuggets.jpg" alt="Nuggs 6 Pcs" loading="lazy">
+                            <span class="price-badge">Rs. 390</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Nuggs 6 Pcs</h3>
+                            <p class="item-description">Six pieces of golden, crispy chicken nuggets served with your choice of dipping sauce. A must-try for all flavor lovers!</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Nuggs 6 Pcs', 390)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Drinks Section -->
+            <section class="menu-section" id="drinks">
+                <div class="section-header">
+                    <span class="section-emoji">🥤</span>
+                    <h2 class="section-title">Drinks</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card" data-aos="fade-up">
+                        <div class="card-image">
+                            <img src="assets/images/berry-blast.jpg" alt="Berry Blast" loading="lazy">
+                            <span class="price-badge">Rs. 299</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Berry Blast</h3>
+                            <p class="item-description">A refreshing blend of mixed berries with crushed ice. Sweet, tangy, and absolutely delicious!</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Berry Blast', 299)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-image">
+                            <img src="assets/images/tropical.jpg" alt="Tropical" loading="lazy">
+                            <span class="price-badge">Rs. 299</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Tropical</h3>
+                            <p class="item-description">Escape to paradise with our tropical fruit blend. Mango, orange, and pineapple goodness in every sip!</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Tropical', 299)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-image">
+                            <img src="assets/images/peach-tree.jpg" alt="Peach Tree" loading="lazy">
+                            <span class="price-badge">Rs. 199</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Peach Tree</h3>
+                            <p class="item-description">Light and refreshing peach iced tea. The perfect companion for your meal!</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Peach Tree', 199)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Deals Section -->
+            <section class="menu-section" id="deals">
+                <div class="section-header">
+                    <span class="section-emoji">🎉</span>
+                    <h2 class="section-title">Deals</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card" data-aos="fade-up">
+                        <div class="card-image">
+                            <img src="assets/images/desire-deal.jpg" alt="Desire Deal" loading="lazy">
+                            <span class="price-badge">Rs. 1290</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Desire Deal</h3>
+                            <p class="item-description">Spicy Half Broast with 500ml drink, 2 pcs thighs, 10 oz fries, garlic dip, 500ml drink. Ultimate value!</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Desire Deal', 1290)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-image">
+                            <img src="assets/images/family-fest.jpg" alt="Family Fest" loading="lazy">
+                            <span class="price-badge">Rs. 2450</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="item-name">Family Fest</h3>
+                            <p class="item-description">1 Spicy Full Broast with 1.5L drink, 4 buns, 4 thighs, 3 garlic dips, 4 garlic dips, 1.5L drink. Perfect for family gatherings!</p>
+                            <button class="order-btn" onclick="orderOnWhatsApp('Family Fest', 2450)">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Frys <span>&</span> Guys</h3>
+                    <p class="footer-tagline">"Warm hug for your taste buds"</p>
+                </div>
+
+                <div class="footer-info">
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>Contact Us</span>
+                        </div>
+                        <p class="footer-item-main">0300 123 0377</p>
+                        <p class="footer-item-sub">For Orders & Delivery</p>
+                    </div>
+
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Location</span>
+                        </div>
+                        <p class="footer-item-main">Main Boulevard</p>
+                        <p class="footer-item-sub">Okara, Pakistan</p>
+                    </div>
+
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            <span>Opening Hours</span>
+                        </div>
+                        <p class="footer-item-main">12:00 PM - 12:00 AM</p>
+                        <p class="footer-item-sub">Open 7 Days a Week</p>
+                    </div>
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-copyright">
+                    <p class="made-with">Made with <span class="heart">❤</span> by Frys & Guys Team</p>
+                    <p class="copyright-text">© 2026 Frys & Guys. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/923001234567?text=Hi!%20I'd%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Order on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+        </a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
