@@ -7,7 +7,7 @@
  */
 
 // Configuration - Replace with your actual WhatsApp number
-const WHATSAPP_NUMBER = '923001234567';
+const WHATSAPP_NUMBER = '923001230377';
 
 // Categories for navigation
 const categories = [
